@@ -1,0 +1,50 @@
+{
+  "name": "dsh-json-tree-preview",
+  "version": "1.4.3",
+  "type": "module",
+  "description": "Collapsible, colour-coded JSON tree renderer for the DeepSeek Harness right sidebar file preview, with search, path copy and virtual scrolling.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babycannotsay/dsh-json-tree-preview.git"
+  },
+  "homepage": "https://github.com/babycannotsay/dsh-json-tree-preview#readme",
+  "bugs": {
+    "url": "https://github.com/babycannotsay/dsh-json-tree-preview/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "better-sidebar",
+    "json",
+    "json-viewer",
+    "tree-view",
+    "document-preview"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

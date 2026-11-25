@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "JSON tree preview",
+    "description": "Opens .json files in the right Sidebar as a collapsible, colour-coded tree with expand/collapse all, filtering, and a parse-error card."
+  }
+}
